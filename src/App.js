@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom';
 import PaginaBusqueda from './paginas/PaginaBusqueda';
 import Error404 from './components/Error404';
+import Lista from './components/lista/Lista';
 
 
 const router = createBrowserRouter([
@@ -19,7 +20,11 @@ const router = createBrowserRouter([
   {
     path: '/buscador',
     element: <PaginaBusqueda />,
-  }
+  },
+  {
+    path: '/lista',
+    element: <Lista/>,
+  },
 
 ])
 

@@ -30,7 +30,7 @@ const PaginaBusqueda = () => {
     );
 
     const ResultadoDeLaBusqueda = (() => {
-        if (resultadoBusqueda == 0) {
+        if (resultadoBusqueda === 0) {
             return (
              <Box sx= {{
                     display: 'flex',
@@ -45,7 +45,7 @@ const PaginaBusqueda = () => {
 
                     }}
                 >
-                   Se ha producido un error en la conexion al servidor
+                Se ha producido un error en la conexion al servidor
                 </Alert>
              </Box>    
         )}
@@ -60,7 +60,7 @@ const PaginaBusqueda = () => {
     } 
 
     const Mensaje =() => {
-        if (resultados === 0) {
+        if (resultados === 0)  {
            return (
             <Typography className= 'mensaje' variant='p'>
                 NO hay Resultados.
@@ -99,7 +99,6 @@ const PaginaBusqueda = () => {
             <Mensaje />  
             <ResultadoDeLaBusqueda />
 
-    
             {noticias && <ListaDeNoticias noticias = {noticias}/>}
             {noticias && <Paginador
                 contador = {cantidadPaginas}

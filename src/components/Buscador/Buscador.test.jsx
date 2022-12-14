@@ -9,7 +9,7 @@ const renderBuscador = () => {
 
 }
 
-describe('<Buscador />',()=>{
+describe('<Buscador />',() => {
     test('Debe renderizarse el Buscador', async () => {
         const component = renderBuscador();
         expect(component.container).toBeInTheDocument(true);

@@ -25,7 +25,11 @@ const Noticia = (
         marginTop:10,
         textAlign:'left',
         shape:'rounded',
+        "&:hover": {
+            border: 'solid 2px cyan'
+        }
         }}
+        
     >
         <CardActionArea onClick = {onCardClick}>
             <Box sx={{
@@ -58,7 +62,8 @@ const Noticia = (
                 component ='img'
                 sx= {{ width:150,
                    RoundedCorner: 'true',
-                   mt: 2,
+                   mt: '2px',
+                   padding:'3px'
                 }}
                 
                 height ='150'
